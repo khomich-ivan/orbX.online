@@ -27,7 +27,7 @@ jobs:
         working-directory: orbX-website
 
       - name: Deploy to GitHub Pages
-        run: npx angular-cli-ghpages --dir=dist/orb-x-website --branch=gh-pages --no-silent --name "Khomich Ivan" --email "gripp.h5n1@gmail.com"
+        run: npx angular-cli-ghpages --dir=dist/orb-x-website --branch=gh-pages --no-silent --name "khomich-ivan" --email "Ivan@Servc.co.il"
         env:
           CI: true
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
