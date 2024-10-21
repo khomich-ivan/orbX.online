@@ -2,6 +2,12 @@
   flex: 1;
 }
 
+.space-between-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .space-between-horizontal-centered {
   display: flex;
   flex-direction: row;
@@ -18,6 +24,18 @@
 
 .align-items-center {
   align-items: center !important;
+}
+
+.aligned-row-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.space-evenly-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .centered-vertically-column-container {
