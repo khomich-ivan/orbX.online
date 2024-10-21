@@ -1,4 +1,4 @@
-name: Build app
+name: Build and Deploy Angular App
 
 on:
   push:
@@ -6,28 +6,29 @@ on:
       - main
 
 jobs:
-  build:
+  build-deploy:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Adding Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
       - name: Install Dependencies
         run: npm install
+        working-directory: orbX-website
 
       - name: Build Angular App
-        run: npm run build
+        run: npm run build -- --base-href /orbX.online/
+        working-directory: orbX-website
 
-      - name: Deploy to gh pages
-        run: |
-          npx angular-cli-ghpages --dir=dist/orbX.online
+      - name: Deploy to GitHub Pages
+        run: npx angular-cli-ghpages --dir=dist/orb-x-website --branch=gh-pages
         env:
           CI: true
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        working-directory: orbX-website
