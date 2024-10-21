@@ -18,6 +18,7 @@
     "@angular/platform-browser": "^18.2.8",
     "@angular/platform-browser-dynamic": "^18.2.8",
     "@angular/router": "^18.2.8",
+    "@fontsource/space-grotesk": "^5.1.0",
     "file-loader": "^6.2.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
