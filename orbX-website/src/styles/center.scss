@@ -20,6 +20,14 @@
   align-items: center !important;
 }
 
+.centered-vertically-column-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .start-row-container {
   display: flex;
   flex-direction: row;
