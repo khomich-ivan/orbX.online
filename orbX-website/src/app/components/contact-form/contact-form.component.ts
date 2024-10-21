@@ -10,12 +10,7 @@ export class ContactFormComponent {
   contactForm: ContactFormGroup;
 
   constructor(private fb: FormBuilder) {
-    this.contactForm = this.fb.group({
-      firstName: new FormControl<string>('d', [Validators.required, Validators.minLength(2)]),
-      lastName: new FormControl<string>('d', [Validators.required, Validators.minLength(2)]),
-      email: new FormControl<string>('d', [Validators.required, Validators.email]),
-      message: new FormControl<string>('d', [Validators.required, Validators.minLength(10)])
-    }) as ContactFormGroup;
+    this.initForm();
   }
 
   onSubmit(): void {
@@ -25,6 +20,21 @@ export class ContactFormComponent {
     } else {
       console.log('Form is invalid');
     }
+  }
+
+  get firstName() { return this.contactForm.controls.firstName; }
+  get lastName() { return this.contactForm.controls.lastName; }
+  get email() { return this.contactForm.controls.email; }
+  get message() { return this.contactForm.controls.message; }
+
+
+  private initForm(): void {
+    this.contactForm = this.fb.group({
+      firstName: new FormControl<string>('', [Validators.required, Validators.minLength(2)]),
+      lastName: new FormControl<string>('', [Validators.required, Validators.minLength(2)]),
+      email: new FormControl<string>('', [Validators.required, Validators.email]),
+      message: new FormControl<string>('', [Validators.required, Validators.minLength(10)])
+    }) as ContactFormGroup;
   }
 }
 type ContactFormGroup = FormGroup<{

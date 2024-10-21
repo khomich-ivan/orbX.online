@@ -1,1 +1,23 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+  <div class="form-row">
+    <label for="firstName">Name <span class="required">(required)</span></label>
+    <div class="form-group">
+      <input id="firstName" formControlName="firstName" type="text" placeholder="First name" />
+      <input id="lastName" formControlName="lastName" type="text" placeholder="Last name" />
+    </div>
+  </div>
 
+  <div class="form-row">
+    <label for="email">Email <span class="required">(required)</span></label>
+    <input id="email" formControlName="email" type="email" placeholder="Email" />
+  </div>
+
+  <div class="form-row">
+    <label for="message">Message <span class="required">(required)</span></label>
+    <textarea id="message" formControlName="message" placeholder="Your message"></textarea>
+  </div>
+
+  <div class="form-row">
+    <button type="submit" [disabled]="contactForm.invalid">Send</button>
+  </div>
+</form>

@@ -8,6 +8,7 @@ import { ContactPageComponent } from './components/contact-page/contact-page.com
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeaderComponent } from './components/header/header.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HeaderComponent } from './components/header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
