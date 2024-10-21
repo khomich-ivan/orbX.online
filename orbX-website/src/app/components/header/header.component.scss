@@ -1,0 +1,27 @@
+@import "color-variables";
+
+.nav-link {
+  font-family: 'Helvetica', sans-serif;
+  color: $primary-color;
+  text-decoration: none;
+  position: relative;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: $primary-color;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+@import "color-variables";
+
+.text-primary {
+  color: $text-primary;
+}
+
+.text-secondary {
+  color: $text-secondary;
+}
+
+.bg-global {
+  background-color: $background-global;
+}
+
+.bg-primary {
+  background-color: $background-primary;
+}
+
+.bg-secondary {
+  background-color: $background-secondary;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
