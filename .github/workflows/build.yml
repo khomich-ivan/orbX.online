@@ -30,7 +30,7 @@ jobs:
         run: |
          npx angular-cli-ghpages --dir=dist/orb-x-website --branch=gh-pages --no-silent \
          --name "khomich-ivan" --email "Ivan@Servc.co.il" \
-         --repo "https://${{ secrets.GITHUB_TOKEN }}@github.com/khomich-ivan/orbX.online.git"
+          --access-token "${{ secrets.GH_TOKEN }}"
         env:
           CI: true
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
