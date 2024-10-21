@@ -70,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "orbX-website:build:production"
+              "buildTarget": "orbX-website:build:production"
             },
             "development": {
-              "browserTarget": "orbX-website:build:development"
+              "buildTarget": "orbX-website:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "orbX-website:build"
+            "buildTarget": "orbX-website:build"
           }
         },
         "test": {
