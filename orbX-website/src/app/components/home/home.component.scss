@@ -1,13 +1,6 @@
 @import "color-variables";
 
-.home-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero-section {
+.image-cover-section {
   height: 30rem;
   width: 100%;
   display: flex;
@@ -17,10 +10,4 @@
   background-image: url('~src/assets/cover-page-blue-red.png');
   background-size: cover;
   background-position: center;
-}
-
-.hero-title {
-  color: $text-secondary;
-  font-size: 3rem;
-  font-weight: 700;
 }
