@@ -27,14 +27,11 @@ jobs:
         working-directory: orbX-website
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: orbX-website/dist/orb-x-website
-          publish_branch: gh-pages
-          user_name: "khomich-ivan"
-          user_email: "Ivan@Servc.co.il"
+        run: |
+         npx angular-cli-ghpages --dir=dist/orb-x-website --branch=gh-pages --no-silent \
+         --name "khomich-ivan" --email "Ivan@Servc.co.il" \
+         --repo "https://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@github.com/khomich-ivan/orbX.online.git"
         env:
           CI: true
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: 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
         working-directory: orbX-website
