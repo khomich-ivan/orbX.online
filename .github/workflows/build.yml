@@ -26,12 +26,3 @@ jobs:
         run: npm run build -- --base-href /orbX.online/
         working-directory: orbX-website
 
-      - name: Deploy to GitHub Pages
-        run: |
-         npx angular-cli-ghpages --dir=dist/orb-x-website --branch=gh-pages --no-silent \
-         --name "khomich-ivan" --email "Ivan@Servc.co.il" \
-         --repo "https://${{ secrets.GH_TOKEN }}@github.com/khomich-ivan/orbX.online.git"
-        env:
-          CI: true
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        working-directory: orbX-website
