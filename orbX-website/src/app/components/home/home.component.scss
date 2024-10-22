@@ -7,27 +7,20 @@
   align-items: center;
 }
 
-// Секция с изображением и заголовком
 .hero-section {
-  //background-color: $background-secondary;
-  height: 500px;
+  height: 30rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  background-image: url('/assets/cover-page-blue-red.png');
+  background-image: url('~src/assets/cover-page-blue-red.png');
   background-size: cover;
   background-position: center;
-}
-
-.hero-content {
-  text-align: center;
 }
 
 .hero-title {
   color: $text-secondary;
   font-size: 3rem;
   font-weight: 700;
-  margin: 0;
 }
