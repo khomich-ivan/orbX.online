@@ -10,6 +10,7 @@ import { AboutComponent } from './components/about/about.component';
 import { HeaderComponent } from './components/header/header.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {NgOptimizedImage} from "@angular/common";
+import {ScrollSpyDirective} from "./directives/scroll-spy.directive";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {NgOptimizedImage} from "@angular/common";
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    ScrollSpyDirective
   ],
   providers: [],
   bootstrap: [AppComponent]

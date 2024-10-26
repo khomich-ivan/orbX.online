@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {SECTIONS} from "../../../variables/sections";
 
 @Component({
   selector: 'app-about',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
+  protected readonly SECTIONS = SECTIONS;
 }
