@@ -1,16 +1,19 @@
 <div class="nav-header">
   <div class="nav-header-container">
     <div
-      (click)="scrollTo(SECTIONS.HOME)"
+      [routerLink]="['/']"
+      [fragment]="SECTIONS.HOME"
       class="font-size-1p5625 clickable">
       orbX</div>
     <div class="start-row-container row-gap-1 font-size-1p25">
       <div
-        (click)="scrollTo(SECTIONS.ABOUT)"
+        [routerLink]="['/']"
+        [fragment]="SECTIONS.ABOUT"
         class="nav-link clickable">
         About</div>
       <div
-        (click)="scrollTo(SECTIONS.CONTACT)"
+        [routerLink]="['/']"
+        [fragment]="SECTIONS.CONTACT"
         class="nav-link clickable">
         Contact</div>
     </div>
