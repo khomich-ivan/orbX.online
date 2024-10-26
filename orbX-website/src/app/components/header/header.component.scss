@@ -25,3 +25,31 @@
     width: 100%;
   }
 }
+
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 5rem;
+  background-color: $background-secondary;
+  z-index: 100;
+}
+
+.nav-header-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav-header-container {
+    width: 86%;
+  }
+}
