@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {SECTIONS} from "../variables/sections";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'orbX-website';
+  protected readonly SECTIONS = SECTIONS;
 }

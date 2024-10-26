@@ -2,7 +2,7 @@
 
 .image-cover-section {
   height: 30rem;
-  width: 100%;
+  //width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,4 +10,11 @@
   background-image: url('~src/assets/cover-page-blue-red.png');
   background-size: cover;
   background-position: center;
+}
+
+.image-container {
+  width: 100%;
+  //max-width: 30rem;
+  height: auto;
+  border-radius: 0.5rem;
 }

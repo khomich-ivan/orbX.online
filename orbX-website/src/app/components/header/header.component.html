@@ -1,16 +1,16 @@
 <div class="nav-header">
   <div class="nav-header-container">
     <div
-      routerLink="{{links.HOME}}"
+      (click)="scrollTo(SECTIONS.HOME)"
       class="font-size-1p5625 clickable">
       orbX</div>
     <div class="start-row-container row-gap-1 font-size-1p25">
       <div
-        routerLink="{{links.ABOUT}}"
+        (click)="scrollTo(SECTIONS.ABOUT)"
         class="nav-link clickable">
         About</div>
       <div
-        routerLink="{{links.CONTACT}}"
+        (click)="scrollTo(SECTIONS.CONTACT)"
         class="nav-link clickable">
         Contact</div>
     </div>

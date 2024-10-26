@@ -2,8 +2,23 @@
   width: 40%;
 }
 
+.width-45-pct {
+  width: 45%;
+}
+
 .width-50-pct {
   width: 50%;
+}
+
+.width-70-90-pct {
+  width: 70%;
+  margin: 0 auto; /* Centers the element horizontally */
+}
+
+@media (max-width: 768px) { /* Adjust this breakpoint as needed */
+  .width-responsive {
+    width: 90%;
+  }
 }
 
 .width-80-pct {

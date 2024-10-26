@@ -5,19 +5,7 @@ import {AboutComponent} from "./components/about/about.component";
 import {ContactPageComponent} from "./components/contact-page/contact-page.component";
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', component: HomeComponent },
-  {
-    path: 'home',
-    component: HomeComponent,
-  },
-  {
-    path: 'about',
-    component: AboutComponent,
-  },
-  {
-    path: 'contact',
-    component: ContactPageComponent,
-  }
+  // todo: consider adding section names to the url
 ]
 
 @NgModule({

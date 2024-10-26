@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {SECTIONS} from "../../../variables/sections";
 
 @Component({
   selector: 'app-header',
@@ -6,11 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  links = Links;
+  protected readonly SECTIONS = SECTIONS;
+
+  scrollTo(section: string): void {
+    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
 
-enum Links {
-  HOME = 'home',
-  ABOUT = 'about',
-  CONTACT = 'contact',
-}
