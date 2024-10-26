@@ -15,18 +15,74 @@
   cursor: pointer;
 }
 
-.navigation-link {
-  opacity: 0.7;
-  transition: ease-in 0.2s;
-  text-decoration: none;
+body {
+  font-family: "Space Grotesk";
+}
 
-  &:hover {
-    transition: ease-in 0.2s;
-    text-decoration: underline;
-    opacity: 1;
+.responsive-section {
+  display: flex;
+  flex-direction: column;
+  column-gap: 2rem;
+  align-items: center;
+  padding: 2rem 1rem;
+  height: 80vh;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 4rem 7.8125rem;
   }
 }
 
-body {
-  font-family: "Space Grotesk";
+.responsive-section .text-content,
+.responsive-section .image-content {
+  flex: 1;
+  margin: 1rem 0;
+}
+
+.responsive-section .text-content {
+  @media (max-width: 768px) {
+    order: 2; /* Text below image on mobile */
+  }
+}
+
+.responsive-section .image-content {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Remove flex: 1 */
+  /* Add width settings */
+  width: 100%;
+  @media (max-width: 768px) {
+    order: 1; /* Text below image on mobile */
+  }
+}
+
+.responsive-section img {
+  border-radius: 0.5rem;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensures the image maintains aspect ratio */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+    font-size: 1.125rem;
+  }
 }

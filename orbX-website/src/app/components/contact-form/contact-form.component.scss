@@ -4,11 +4,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
-  //max-width: 600px;
-  margin: 0 auto;
-  //background-color: #f9f9f9; /* Light background */
-  padding: 20px;
-  border-radius: 10px;
 
   .form-row {
     display: grid;
@@ -41,6 +36,7 @@
     font-size: 1rem;
     outline: none;
     transition: border-color 0.3s;
+    box-sizing: border-box;
 
     &:focus {
       border-color: #008000; /* Green when focused */
@@ -54,7 +50,7 @@
 
   button {
     padding: 10px 20px;
-    background-color: #008000; /* Green button */
+    background-color: #008000;
     color: white;
     border: none;
     border-radius: 30px;
