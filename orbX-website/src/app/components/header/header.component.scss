@@ -42,15 +42,15 @@
 }
 
 .nav-header-container {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  padding: 0 1rem;
 
-@media (max-width: 768px) {
-  .nav-header-container {
-    width: 86%;
+  @media (min-width: 768px) {
+    padding: 0 7.8125rem;
   }
 }
+

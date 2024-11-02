@@ -8,9 +8,5 @@ import {SECTIONS} from "../../../variables/sections";
 })
 export class HeaderComponent {
   protected readonly SECTIONS = SECTIONS;
-
-  scrollTo(section: string): void {
-    document.getElementById(section)?.scrollIntoView({ behavior: 'smooth' });
-  }
 }
 

@@ -1,0 +1,13 @@
+<div class="responsive-section" appScrollSpy="{{SECTIONS.PARTNERS}}">
+  <div class="vertical-container-simple width-100-pct">
+    <div class="centered-vertically-column-container column-gap-1">
+      <h1 class="partners-title"> Our partners</h1>
+      <div class="partners-container width-100-pct">
+        <img *ngFor="let partner of partners; let i = index"
+             [src]="partner.src"
+             [alt]="partner.alt"
+             [class.active]="i === currentIndex">
+      </div>
+    </div>
+  </div>
+</div>

@@ -7,6 +7,5 @@ import {SECTIONS} from "../../../variables/sections";
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-
   protected readonly SECTIONS = SECTIONS;
 }

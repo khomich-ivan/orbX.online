@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+  .partners-title {
+    margin-left: 1.3rem;
+  }
+}
+
+.partners-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+.partners-container img {
+  flex-grow: 1;
+  width: 15%;
+}
+
+@media (max-width: 768px) {
+  .partners-container {
+    height: 30rem;
+  }
+  .partners-container img {
+    display: none;
+    width: 80%; /* Adjust as needed */
+  }
+  .partners-container img.active {
+    display: block;
+  }
+}

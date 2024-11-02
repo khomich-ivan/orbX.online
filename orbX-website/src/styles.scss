@@ -55,8 +55,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Remove flex: 1 */
-  /* Add width settings */
   width: 100%;
   @media (max-width: 768px) {
     order: 1; /* Text below image on mobile */
@@ -64,7 +62,7 @@ body {
 }
 
 .responsive-section img {
-  border-radius: 0.5rem;
+  border-radius: 1.4rem;
   max-width: 100%;
   height: auto;
   object-fit: contain; /* Ensures the image maintains aspect ratio */
