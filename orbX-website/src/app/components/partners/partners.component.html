@@ -1,13 +1,25 @@
 <div class="responsive-section" appScrollSpy="{{SECTIONS.PARTNERS}}">
-  <div class="vertical-container-simple width-100-pct">
+  <div class="vertical-container-simple width-100-pct column-gap-5">
     <div class="centered-vertically-column-container column-gap-1">
-      <h1 class="partners-title"> Our partners</h1>
+      <h1 class="partners-title">Our partners</h1>
       <div class="partners-container width-100-pct">
-        <img *ngFor="let partner of partners; let i = index"
-             [src]="partner.src"
-             [alt]="partner.alt"
-             [class.active]="i === currentIndex">
+        <img
+          *ngFor="let partner of partners; let i = index"
+          [src]="partner.src"
+          [alt]="partner.alt"
+          [class.active]="i === currentIndex">
       </div>
+    </div>
+
+
+    <div class="centered-vertically-column-container column-gap-1">
+      <h1 class="partners-title">Use cases</h1>
+      <div class="space-between-horizontal-centered width-100-pct">
+        <span class="width-30-pct gradient-text">Digitalization<br>of exhibitions</span>
+        <span class="width-30-pct gradient-text">Metaverse of<br>education and art</span>
+        <span class="width-30-pct gradient-text">Dynamic<br>learning</span>
+      </div>
+
     </div>
   </div>
 </div>
