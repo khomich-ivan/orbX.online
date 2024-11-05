@@ -21,7 +21,8 @@ html {
 
 
 body {
-  font-family: "Space Grotesk";
+  font-family: "Space Grotesk", serif;
+  background: $background-global;
 }
 
 .responsive-section {
@@ -61,6 +62,17 @@ body {
   }
 }
 
+.mobile-text-first {
+  @media (max-width: 768px) {
+    .text-content {
+      order: 1;
+    }
+    .image-content {
+      order: 2;
+    }
+  }
+}
+
 .responsive-section img {
   border-radius: 1.4rem;
   max-width: 100%;
@@ -82,7 +94,7 @@ h1 {
 p {
   font-size: 1rem;
   line-height: 1.5;
-  text-align: center;
+  text-align: justify;
 
   @media (min-width: 768px) {
     text-align: left;

@@ -12,6 +12,8 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {NgOptimizedImage} from "@angular/common";
 import {ScrollSpyDirective} from "./directives/scroll-spy.directive";
 import {PartnersComponent} from "./components/partners/partners.component";
+import {UseCasesComponent} from "./components/use-cases/use-cases.component";
+import {DigitalizationComponent} from "./components/digitalization/digitalization.component";
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import {PartnersComponent} from "./components/partners/partners.component";
     ReactiveFormsModule,
     NgOptimizedImage,
     ScrollSpyDirective,
-    PartnersComponent
+    PartnersComponent,
+    UseCasesComponent,
+    DigitalizationComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

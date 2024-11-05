@@ -3,4 +3,6 @@ export enum SECTIONS {
   ABOUT = 'about',
   CONTACT = 'contact',
   PARTNERS = 'partners',
+  USE_CASES = 'use-cases',
+  DIGITALIZATION = 'digitalization',
 }

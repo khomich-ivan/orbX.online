@@ -19,3 +19,18 @@
 .bg-secondary {
   background-color: $background-secondary;
 }
+
+.gradient-text {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #5966c2, #b86a8d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+}
