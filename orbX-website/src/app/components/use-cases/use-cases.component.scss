@@ -6,3 +6,55 @@
     display: none;
   }
 }
+
+.responsive-section img {
+  border-radius: unset;
+}
+
+.use-cases-section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.use-cases-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.use-cases-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.use-case-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+}
+
+.use-case-icon {
+  width: 3rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.use-case-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #5a3e91; /* Optional: Change as per your theme */
+}
+
+.use-case-description {
+  font-size: 1rem;
+  color: #666;
+}
