@@ -14,6 +14,7 @@ import {ScrollSpyDirective} from "./directives/scroll-spy.directive";
 import {PartnersComponent} from "./components/partners/partners.component";
 import {UseCasesComponent} from "./components/use-cases/use-cases.component";
 import {DigitalizationComponent} from "./components/digitalization/digitalization.component";
+import {MetaverseComponent} from "./components/metaverse/metaverse.component";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {DigitalizationComponent} from "./components/digitalization/digitalizatio
     ScrollSpyDirective,
     PartnersComponent,
     UseCasesComponent,
-    DigitalizationComponent
+    DigitalizationComponent,
+    MetaverseComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

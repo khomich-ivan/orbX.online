@@ -31,12 +31,17 @@ body {
   column-gap: 2rem;
   align-items: center;
   padding: 2rem 1rem;
-  height: 80vh;
+  height: 60vh; // todo: decide
 
   @media (min-width: 768px) {
     flex-direction: row;
     padding: 4rem 7.8125rem;
   }
+
+  @media (min-height: 1080px) {
+    height: 70vh;
+  }
+  // todo: width on wide screens
 }
 
 .responsive-section .text-content,

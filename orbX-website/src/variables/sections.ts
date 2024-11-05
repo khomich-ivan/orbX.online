@@ -5,4 +5,5 @@ export enum SECTIONS {
   PARTNERS = 'partners',
   USE_CASES = 'use-cases',
   DIGITALIZATION = 'digitalization',
+  METAVERSE = 'metaverse'
 }
