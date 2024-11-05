@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
+  padding-bottom: 1.5rem;
 
   .form-row {
     display: grid;
@@ -32,7 +33,7 @@
     width: 100%;
     padding: 10px;
     border: 2px solid #ccc;
-    border-radius: 30px; /* Rounds the input borders */
+    border-radius: 30px;
     font-size: 1rem;
     outline: none;
     transition: border-color 0.3s;
@@ -44,8 +45,8 @@
   }
 
   textarea {
-    height: 100px;
-    resize: none;
+    height: 10rem;
+    //resize: none;
   }
 
   button {

@@ -13,8 +13,9 @@ import {NgOptimizedImage} from "@angular/common";
 import {ScrollSpyDirective} from "./directives/scroll-spy.directive";
 import {PartnersComponent} from "./components/partners/partners.component";
 import {UseCasesComponent} from "./components/use-cases/use-cases.component";
-import {DigitalizationComponent} from "./components/digitalization/digitalization.component";
-import {MetaverseComponent} from "./components/metaverse/metaverse.component";
+import {DigitalizationComponent} from "./components/use-cases/sub/digitalization/digitalization.component";
+import {MetaverseComponent} from "./components/use-cases/sub/metaverse/metaverse.component";
+import {DynamicLearningComponent} from "./components/use-cases/sub/dynamic-learning/dynamic-learning.component";
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {MetaverseComponent} from "./components/metaverse/metaverse.component";
     PartnersComponent,
     UseCasesComponent,
     DigitalizationComponent,
-    MetaverseComponent
+    MetaverseComponent,
+    DynamicLearningComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
