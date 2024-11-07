@@ -1,16 +1,18 @@
-import { Component } from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {EmailService} from "../../service/email.service";
+import {NotificationsService} from "../../service/notifications.service";
 
 @Component({
   selector: 'app-contact-form',
   templateUrl: './contact-form.component.html',
-  styleUrls: ['./contact-form.component.scss']
+  styleUrls: ['./contact-form.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
-export class ContactFormComponent { // todo: add validation messages, notifications if send or error, clear form
+export class ContactFormComponent {
   contactForm: ContactFormGroup;
 
-  constructor(private fb: FormBuilder, private emailService: EmailService) {
+  constructor(private fb: FormBuilder, private emailService: EmailService, private notificationsService: NotificationsService) {
     this.initForm();
   }
 
@@ -18,7 +20,10 @@ export class ContactFormComponent { // todo: add validation messages, notificati
     if (!this.contactForm.valid) {
       return;
     }
-    this.emailService.sendEmail(this.initEmailMessage())
+    this.emailService.sendEmail(this.initEmailMessage()).subscribe({
+      next: () => this.handleSuccess(),
+      error: () => this.handleError(),
+    });
   }
 
   get firstName() { return this.contactForm.controls.firstName; }
@@ -33,6 +38,17 @@ export class ContactFormComponent { // todo: add validation messages, notificati
       message: this.message.value,
       reply_to: this.email.value,
     }
+  }
+
+  private handleSuccess(): void {
+    this.notificationsService.success(
+      { title: 'Thank you!', message: 'We will contact you shortly!' })
+    this.contactForm.reset();
+  }
+
+  private handleError(): void {
+    this.notificationsService.error(
+      { title: 'Whoops, something went wrong.', message: 'Please, contact us: contact@orbx.digital', timeout: 5000 })
   }
 
   private initForm(): void {

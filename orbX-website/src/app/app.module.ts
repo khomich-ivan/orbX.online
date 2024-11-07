@@ -16,6 +16,7 @@ import {UseCasesComponent} from "./components/use-cases/use-cases.component";
 import {DigitalizationComponent} from "./components/use-cases/sub/digitalization/digitalization.component";
 import {MetaverseComponent} from "./components/use-cases/sub/metaverse/metaverse.component";
 import {DynamicLearningComponent} from "./components/use-cases/sub/dynamic-learning/dynamic-learning.component";
+import {NotificationComponent} from "./components/notification/notification.component";
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {DynamicLearningComponent} from "./components/use-cases/sub/dynamic-learn
     UseCasesComponent,
     DigitalizationComponent,
     MetaverseComponent,
-    DynamicLearningComponent
+    DynamicLearningComponent,
+    NotificationComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

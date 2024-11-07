@@ -1,0 +1,16 @@
+<div *ngIf="notifications.length"
+     class="position-fixed start-column-vertical-right-container column-gap-1 notifications-wrapper">
+  <ng-container *ngFor="let n of notifications; index as i">
+    <div [style.visibility]="n.hidden ? 'hidden' : 'initial'" class="width-21p875 position-rel aligned-row-container row-gap-0p625 br-0p625 clickable notification-tr">
+      <svg class="position-abs width-1p875 height-1p875 close-svg" (click)="n.hidden = true">
+        <use [attr.xlink:href]="'/assets/svg/close.svg#img'"
+             [attr.href]="'/assets/svg/close.svg#img'"></use>
+      </svg>
+      <div class="width-1p875 height-1p875 {{n.type}}"></div>
+      <div class="notification-text-container vertical-container-simple">
+        <div class="bold500">{{n.title}}</div>
+        <div class="color">{{n.message}}</div>
+      </div>
+    </div>
+  </ng-container>
+</div>
