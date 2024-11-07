@@ -43,3 +43,9 @@ width-90-pct {
 .width-21p875 {
   width: 21.875rem;
 }
+
+.width-50-pct-desktop{
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+}

@@ -10,16 +10,16 @@ export class AboutComponent {
   protected readonly SECTIONS = SECTIONS;
   teamMembers: TeamMember[] = [
     {
-      name: 'Yurii',
-      position: 'Chief technology officer',
-      photo: 'About_Photo_Yurii.png',
-      description: 'The technical force behind our platform, with expertise in software and game development.'
-    },
-    {
       name: 'Roman',
       position: 'Chief executive officer',
       photo: 'About_Photo_Roman.png',
       description: 'Unites our creative and strategic directions, overseeing our 3D modeling and photogrammetry processes.'
+    },
+    {
+      name: 'Yurii',
+      position: 'Chief technology officer',
+      photo: 'About_Photo_Yurii.png',
+      description: 'The technical force behind our platform, with expertise in software and game development.'
     },
     {
       name: 'Ivan',
