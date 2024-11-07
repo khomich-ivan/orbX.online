@@ -18,3 +18,9 @@
   height: auto;
   border-radius: 0.5rem;
 }
+
+@media (max-width: 768px) {
+  p {
+    text-align: center;
+  }
+}
